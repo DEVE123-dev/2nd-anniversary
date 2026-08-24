@@ -1,0 +1,160 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #111;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #e10600; /* Coca-Cola red */
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.hero .date {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+button {
+  background: white;
+  color: #e10600;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.showcase {
+  text-align: center;
+  padding: 40px;
+}
+
+.featured img {
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.collage img {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.collage img:hover {
+  transform: scale(1.05);
+}
+
+.timeline {
+  background: #f8f8f8;
+  padding: 40px;
+  text-align: center;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #e10600;
+}
+
+.memories {
+  padding: 40px;
+  text-align: center;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.photo-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
+
+.surprise {
+  text-align: center;
+  padding: 40px;
+}
+
+#hiddenDot {
+  width: 20px;
+  height: 20px;
+  background: #e10600;
+  border-radius: 50%;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.ending {
+  text-align: center;
+  padding: 60px 20px;
+  background: #111;
+  color: white;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 80%;
+  border-radius: 12px;
+}
+
+.close {
+  position: absolute;
+  top: 20px; right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
